@@ -1,0 +1,212 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #0ea088;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  height: 100%; /* Ensure the body and html take up the full height of the viewport */
+  margin: 100; /* Remove any default margin */
+  display: flex;
+  justify-content: center; /* Centers the container horizontally */
+  align-items: center; /* Centers the container vertically */
+}
+
+.container {
+  max-width: 900px;
+  margin: 30px auto;
+  padding: 20px;
+  background-color: rgb(1, 221, 166);
+  border-radius: 100px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border-bottom: 20px solid #ccc;  /* Optional, for some separation */
+ }
+ header.container {
+  height: 70%; /* Ensure the body and html take up the full height of the viewport */
+  margin: 50; /* Remove any default margin */
+  padding: 60px;
+  background-color: rgb(1, 221, 166);
+  border-bottom: 20px solid #ccc;  /* Optional, for some separation */
+}
+
+header h1 {
+  font-size: 40px;
+  margin: 10px auto;
+  color: #333;  /* Dark text color for the header */
+}
+
+#task-list {
+  margin-top: 20px;
+  list-style: radial-gradient(dtg);
+  padding: 0;
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+}
+
+/* Add Task Section */
+.add-task {
+  border-radius: 100px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.add-task input {
+  width: 300px;
+  padding: 10px;
+  margin-right: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.add-task button {
+  padding: 10px 20px;
+  background-color: #df7e00;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.add-task button:hover {
+  background-color: #0ea088;
+
+
+}
+
+/* Task List */
+.task-list {
+  background-color: #e68f0d;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.task-list h2 {
+  text-align: center;
+  color: #333;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+ul li {
+  background-color: #fff;
+  padding: 10px;
+  margin: 5px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+ul li button {
+  background-color: #e26d0d;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+ul li button:hover {
+  background-color: #e53935;
+}
+
+.view-tasks-link {
+  text-align: center;
+  margin-top: 20px;
+  max-width: 900px;
+  margin: 30px auto;
+  padding: 20px;
+  background-color: rgb(240, 134, 14);
+  border-radius: 100px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+
+ }
+.view-tasks-link a {
+  color: #f7f2f2;
+  text-decoration: salmon;
+  font-size: 17px;
+
+}
+
+.view-tasks-link a:hover {
+  text-decoration: underline;
+text-transform: capitalize;
+}
+.view-tasks-link:hover {
+  background-color: #0ea088;
+}
+
+/* Style the list item (li) to use Flexbox */
+li {
+  display: flex;
+  justify-content: flex-start;  /* Align buttons to the left */
+  align-items: center;          /* Vertically align items */
+  padding: 10px;
+  background-color: #f4f4f4;
+  margin: 5px 0;
+  border-radius: 4px;
+  position: relative;
+}
+
+/* Style the list item (li) to use Flexbox */
+li.task-item {
+  display: flex;
+  justify-content: space-between;/* This will space out the task text and the buttons */
+  align-items: center;             /* Vertically align items */
+  padding: 10px;
+  background-color: #f4f4f4;
+  margin: 5px 0;
+  border-radius: 4px;
+  position: relative;
+}
+
+/* Style the buttons container */
+.button-container {
+  display: flex;
+  justify-content: space-between;  /* Ensure buttons are aligned in a row */
+  gap: 10px;                       /* Space between buttons */
+}
+
+/* Style the buttons (Edit and Delete) */
+button {
+  padding: 5px 10px;
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+  background-color: #007bff;
+  color: white;
+  font-size: 14px;
+}
+
+/* Style the delete button specifically */
+.delete-btn {
+  background-color: #ff4136; /* Red background for delete */
+}
+
+/* Style the edit button specifically */
+.edit-btn {
+  background-color: #28a745; /* Green background for edit */
+}
+
+/* Change button color on hover */
+button:hover {
+  opacity: 0.8;
+}
+
+/* Change button color when clicked (active state) */
+button:active {
+  opacity: 0.6;
+}
